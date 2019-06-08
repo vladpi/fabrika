@@ -1,0 +1,13 @@
+.warn {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #dc3522;
+	top: 0;
+	left: 0;
+}
+
+.warn a {
+	color: #fff;
+	font-size: 30px;
+}

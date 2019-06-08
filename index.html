@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Фабрика</title>
+	<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<header class="header clear">
+	<div class="container">
+		<div class="header-wrapper clear">
+			<div class="header-logo"></div>
+			<h1 class="header-h1">IT-агентство полного цикла <br>с собственным производством
+				<span>Делаем сайты, сервисы и приложения.</span>
+			</h1>
+		</div>
+		<dv class="header-btn" onclick="moveHeader()"><span class="header-btn-img"></span></div>
+	</div>
+
+</header>
+<section id="production" class="production">
+	<div class="container">
+		<div class="production-grid clear">
+
+			<div class="prodiction-grid-block clear">
+				<div class="clear">
+					<div class="production-grid-item-header">
+						<h2 class="brand-header production-header mobile-offset">Произодство</h2>
+						<p class="production-text mobile-offset">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+				<div class="clear">
+					<div class="production-grid-item production-red">
+						<div class="production-icn production-icn-design"></div>
+						<p class="production-label">Дизайн</p>
+					</div>
+					<div class="production-grid-item production-black"></div>
+					<div class="production-grid-item production-red">
+						<div class="production-icn production-icn-web-apps"></div>
+						<p class="production-label">Web <br> приложения</p>
+					</div>
+				</div>
+				<div class="clear">
+					<div class="production-grid-item production-transparent"></div>
+					<div class="production-grid-item production-red">
+						<div class="production-icn production-icn-sites"></div>
+						<p class="production-label">Сайты</p>
+					</div>
+					<div class="production-grid-item production-black"></div>
+				</div>
+			</div>
+			<div class="prodiction-grid-block clear">
+				<div class="clear">
+					<div class="production-grid-item production-red">
+						<div class="production-icn production-icn-mobile-apps"></div>
+						<p class="production-label">Мобильные приложения</p>
+					</div>
+					<div class="production-grid-item production-black"></div>
+				</div>
+				<div class="clear">
+					<div class="production-grid-item production-black"></div>
+					<div class="production-grid-item production-red">
+						<div class="production-icn production-icn-seo"></div>
+						<p class="production-label">SEO, SMM, SERM</p>
+					</div>
+					<div class="production-grid-item production-black"></div>
+				</div>
+				<div class="clear">
+					<div class="production-grid-item production-red">
+						<div class="production-icn production-icn-business"></div>
+						<p class="production-label">Бизнес <br> решения</p>
+					</div>
+					<div class="production-portfolio">
+						<a href="javascript:openProjects()" class="production-btn">Портфолио</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section class="order-project mobile-offset">
+	<div class="container order-container">
+		<h3 class="brand-header">Заказать проект</h3>
+		<form class="order-form" action="./" method="post">
+			<div class="clear order-type order-row">
+				<input type="radio" name="type" value="design" id="design">
+				<label class="order-radio-label" for="design">Дизайн</label>
+				<input type="radio" name="type" vxalue="site" id="site">
+				<label class="order-radio-label" for="site">Сайт</label>
+				<input type="radio" name="type" value="app" id="app">
+				<label class="order-radio-label" for="app">Приложение</label>
+				<input type="radio" name="type" value="other" id="other">
+				<label class="order-radio-label" for="other">Другое</label>
+				<span class="error error-type invisible">Выберите нужное</span>
+			</div>
+			<div class="clear">
+				<textarea class="order-textarea" name="description" placeholder="Опишите задачу или прикрепите файл с описанием."></textarea>
+			</div>
+			<div class="clear">
+				<input class="order-file" type="file" name="file" id="file">
+				<label for="file">прикрепить файл</label>
+				<span class="file-active invisible"></span>
+			</div>
+			<div class="clear order-row">
+				<input class="order-text" name="name" type="text" placeholder="Ваше ФИО" id="name">
+				<input class="order-text" name="company" type="text" placeholder="Наименование компании" id="company">
+				<span class="error error-empty invisible">Заполните все поля</span>
+			</div>
+			<div class="clear order-row">
+				<input class="order-text" name="phone" type="phone" placeholder="Ваш номер телефона" id="phone">
+				<input class="order-text" name="email" type="email" placeholder="Ваш почтовый адрес" id="js-email">
+				<span class="error error-email invisible">Некорректный адрес почты</span>
+			</div>
+			<div class="clear">
+				<input class="order-submit" type="submit" value="Отправить">
+			</div>
+		</form>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container mobile-offset">
+		<h4 class="brand-header footer-header">Связь</h4>
+		<div class="clear">
+			<div class="footer-col">
+				<p class="footer-label">Пишите:</p>
+				<a href="mailto:input@fabrika.red" class="footer-mail">input@fabrika.red</a>
+			</div>
+			<div class="footer-col">
+				<p class="footer-label">Звоните:</p>
+				<a href="tel:+79107430909" class="footer-phone">+7 (910) 743-09-09</a>
+			</div>
+			<div class="footer-col">
+				<p class="footer-label">Следите:</p>
+				<a href="https://www.behance.net/" class="footer-link">Behance</a>
+				<a href="https://habrahabr.ru/" class="footer-link">Habrahabr</a>
+				<a href="https://www.instagram.com" class="footer-link">Instagram</a>
+				<a href="https://twitter.com/" class="footer-link">Twitter</a>
+			</div>
+		</div>
+	</div>
+	<div class="black-line"></div>
+	<div class="container mobile-offset">
+		<p class="copyright">© 2017 fabrika</p>
+	</div>
+</footer>
+
+<section class="projects animation-wrap">
+	<div class="container projects-wrap clear">
+		<div class="projects-grid">
+			<div class="projects-grid-item mix category-apps">
+				<img src="img/vesna.png" alt="">
+				<div class="projects-grid-item-details">
+					<p class="project-name">Весна памяти</p>
+					<div class="clear">
+						<div class="details"></div>
+						<div class="share"></div>
+					</div>
+				</div>
+			</div>
+			<div class="projects-grid-item mix category-sites">
+				<img src="img/vesna.png" alt="">
+				<div class="projects-grid-item-details">
+					<p class="project-name">Весна памяти</p>
+					<div class="clear">
+						<div class="details"></div>
+						<div class="share"></div>
+					</div>
+				</div>
+			</div>
+			<div class="projects-grid-item mix category-design">
+				<img src="img/vesna.png" alt="">
+				<div class="projects-grid-item-details">
+					<p class="project-name">Весна памяти</p>
+					<div class="clear">
+						<div class="details"></div>
+						<div class="share"></div>
+					</div>
+				</div>
+			</div>
+			<div class="projects-grid-item mix category-apps">
+				<img src="img/vesna.png" alt="">
+				<div class="projects-grid-item-details">
+					<p class="project-name">Весна памяти</p>
+					<div class="clear">
+						<div class="details"></div>
+						<div class="share"></div>
+					</div>
+				</div>
+			</div>
+			<div class="projects-grid-item mix category-sites">
+				<img src="img/vesna.png" alt="">
+				<div class="projects-grid-item-details">
+					<p class="project-name">Весна памяти</p>
+					<div class="clear">
+						<div class="details"></div>
+						<div class="share"></div>
+					</div>
+				</div>
+			</div>
+			<div class="projects-grid-item mix category-design">
+				<img src="img/vesna.png" alt="">
+				<div class="projects-grid-item-details">
+					<p class="project-name">Весна памяти</p>
+					<div class="clear">
+						<div class="details"></div>
+						<div class="share"></div>
+					</div>
+				</div>
+			</div>
+			<div class="projects-grid-item mix category-apps">
+				<img src="img/vesna.png" alt="">
+				<div class="projects-grid-item-details">
+					<p class="project-name">Весна памяти</p>
+					<div class="clear">
+						<div class="details"></div>
+						<div class="share"></div>
+					</div>
+				</div>
+			</div>
+			<div class="projects-grid-item mix category-sites">
+				<img src="img/vesna.png" alt="">
+				<div class="projects-grid-item-details">
+					<p class="project-name">Весна памяти</p>
+					<div class="clear">
+						<div class="details"></div>
+						<div class="share"></div>
+					</div>
+				</div>
+			</div>
+			<div class="projects-grid-item mix category-design">
+				<img src="img/vesna.png" alt="">
+				<div class="projects-grid-item-details">
+					<p class="project-name">Весна памяти</p>
+					<div class="clear">
+						<div class="details"></div>
+						<div class="share"></div>
+					</div>
+				</div>
+			</div>
+			<div class="projects-grid-item mix category-apps">
+				<img src="img/vesna.png" alt="">
+				<div class="projects-grid-item-details">
+					<p class="project-name">Весна памяти</p>
+					<div class="clear">
+						<div class="details"></div>
+						<div class="share"></div>
+					</div>
+				</div>
+			</div>
+			<div class="projects-grid-item mix category-sites">
+				<img src="img/vesna.png" alt="">
+				<div class="projects-grid-item-details">
+					<p class="project-name">Весна памяти</p>
+					<div class="clear">
+						<div class="details"></div>
+						<div class="share"></div>
+					</div>
+				</div>
+			</div>
+			<div class="projects-grid-item mix category-design">
+				<img src="img/vesna.png" alt="">
+				<div class="projects-grid-item-details">
+					<p class="project-name">Весна памяти</p>
+					<div class="clear">
+						<div class="details"></div>
+						<div class="share"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="container projects-fixed-filter invisible">
+	<div class="projects-fixed">
+		<h5 class="brand-header projects-header">Проекты</h5>
+		<div class="projects-filter">
+			<form action="javascript:void(0)">
+				<input type="radio" name="project-type" value="all" id="projects-all" checked>
+				<label data-filter="all" class="projects-label js-item" for="projects-all">Все</label>
+				<input type="radio" name="project-type" value="design" id="projects-design">
+				<label data-filter=".category-design" class="projects-label js-item" for="projects-design">Дизайн</label>
+				<input type="radio" name="project-type" value="sites" id="projects-sites">
+				<label data-filter=".category-sites" class="projects-label js-item" for="projects-sites">Сайты</label>
+				<input type="radio" name="project-type" value="apps" id="projects-apps">
+				<label data-filter=".category-apps" class="projects-label js-item" for="projects-apps">Приложения</label>
+			</form>
+		</div>
+	</div>
+	<div onclick="closeProjects()" class="projects-close"></div>
+</div>
+
+<script src="js/mixitup.min.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" charset="utf-8"></script>
+<script src="js/main.js" charset="utf-8"></script>
+</body>
+</html>
